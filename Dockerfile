@@ -10,6 +10,6 @@ RUN apt-get -y update && \
   sed -i 's/bind_address : "127.0.0.1"/bind_address : "0.0.0.0"/g' searx/settings.yml && \
   sed -i 's/language : "en-US"/language : "zh-CN"/g' searx/settings.yml
 
-EXPOSE 37012
+EXPOSE 8888
 
 CMD python /searx/searx/webapp.py
